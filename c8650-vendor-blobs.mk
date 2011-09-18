@@ -22,6 +22,7 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/c8650/proprietary/libcm.so:system/lib/libcm.so \
     vendor/huawei/c8650/proprietary/libreference-ril.so:system/lib/libreference-ril.so \
     vendor/huawei/c8650/proprietary/libreference-cdma-sms.so:system/lib/libreference-cdma-sms.so \
+#    vendor/huawei/c8650/proprietary/rild:system/bin/rild \
 
 PRODUCT_COPY_FILES += \
     vendor/huawei/c8650/proprietary/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \
@@ -114,6 +115,11 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/c8650/proprietary/libmmprocess.so:system/lib/libmmprocess.so\
     vendor/huawei/c8650/proprietary/libhwrpc.so:system/lib/libhwrpc.so \
     vendor/huawei/c8650/proprietary/libhwrpc.so:obj/lib/libhwrpc.so \
+
+# wifi
+PRODUCT_COPY_FILES += \
+    vendor/huawei/c8650/proprietary/wpa_supplicant:system/bin/wpa_supplicant \
+    vendor/huawei/c8650/proprietary/wl:system/bin/wl \
 
 
 
