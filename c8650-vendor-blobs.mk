@@ -18,11 +18,8 @@
 
 PRODUCT_COPY_FILES += \
     vendor/huawei/c8650/proprietary/libril-qc-1.so:system/lib/libril-qc-1.so \
-    vendor/huawei/c8650/proprietary/libril.so:system/lib/libril.so \
-    vendor/huawei/c8650/proprietary/libcm.so:system/lib/libcm.so \
-    vendor/huawei/c8650/proprietary/libreference-ril.so:system/lib/libreference-ril.so \
-    vendor/huawei/c8650/proprietary/libreference-cdma-sms.so:system/lib/libreference-cdma-sms.so \
-#    vendor/huawei/c8650/proprietary/rild:system/bin/rild \
+    vendor/huawei/c8650/proprietary/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
+
 
 PRODUCT_COPY_FILES += \
     vendor/huawei/c8650/proprietary/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \
@@ -38,9 +35,8 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/c8650/proprietary/akmd8962:system/bin/akmd8962 \
     vendor/huawei/c8650/proprietary/akmd8975:system/bin/akmd8975 \
     vendor/huawei/c8650/proprietary/compassd:system/bin/compassd \
-    vendor/huawei/c8650/proprietary/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
     vendor/huawei/c8650/proprietary/libdiag.so:system/lib/libdiag.so \
-    vendor/huawei/c8650/proprietary/init.qcom.bt.sh:system/etc/init.qcom.bt.sh \
+    vendor/huawei/c8650/proprietary/libcm.so:system/lib/libcm.so \
     vendor/huawei/c8650/proprietary/init.qcom.coex.sh:system/etc/init.qcom.coex.sh \
     vendor/huawei/c8650/proprietary/init.qcom.fm.sh:system/etc/init.qcom.fm.sh \
     vendor/huawei/c8650/proprietary/init.qcom.post_boot.sh:system/etc/init.qcom.post_boot.sh \
@@ -100,7 +96,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/huawei/c8650/proprietary/sensors.default.so:system/lib/hw/sensors.default.so \
     vendor/huawei/c8650/proprietary/lights.msm7k.so:system/lib/hw/lights.msm7k.so \
-    vendor/huawei/c8650/proprietary/gps.default.so:system/lib/hw/gps.default.so \
     vendor/huawei/c8650/proprietary/copybit.msm7k.so:system/lib/hw/copybit.msm7k.so \
     vendor/huawei/c8650/proprietary/gralloc.msm7k.so:system/lib/hw/gralloc.msm7k.so \
 
@@ -120,6 +115,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/huawei/c8650/proprietary/wpa_supplicant:system/bin/wpa_supplicant \
     vendor/huawei/c8650/proprietary/wl:system/bin/wl \
+
+# bluetooth
+PRODUCT_COPY_FILES += \
+    vendor/huawei/c8650/proprietary/port-bridge:system/bin/port-bridge \
+    vendor/huawei/c8650/proprietary/brcm_patchram_plus:system/bin/brcm_patchram_plus \
+    vendor/huawei/c8650/proprietary/BCM4329.hcd:system/etc/bluetooth/BCM4329.hcd \
 
 
 
