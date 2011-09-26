@@ -122,6 +122,9 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/c8650/proprietary/brcm_patchram_plus:system/bin/brcm_patchram_plus \
     vendor/huawei/c8650/proprietary/BCM4329.hcd:system/etc/bluetooth/BCM4329.hcd \
 
-
+# ril
+PRODUCT_COPY_FILES += \
+    vendor/huawei/c8650/proprietary/libreference-ril.so:/system/lib/libreference-ril.so \
+    vendor/huawei/c8650/proprietary/libril.so:/system/lib/libril.so \
 
 
